@@ -1,90 +1,24 @@
-/* =========================================
-   YOUR WHATSAPP NUMBER
-========================================= */
+function order(product) {
 
-const phoneNumber = "254118043649";
-
-
-/* =========================================
-   GENERAL BUSINESS ORDER
-========================================= */
-
-function orderGeneral() {
+    const phone = "254118043649";
 
     const message =
-        "Hi Mama Nakuru 👋 I would like to make an order.";
-
-    openWhatsApp(message);
-}
-
-
-/* =========================================
-   PRODUCT ORDER
-========================================= */
-
-function orderProduct(product) {
-
-    const message =
-        `Hi Mama Nakuru 👋 I would like to order: ${product}.`;
-
-    openWhatsApp(message);
-}
-
-
-/* =========================================
-   WEBSITE CUSTOMER
-========================================= */
-
-function requestWebsite() {
-
-    const message =
-        "Hi Michael 👋 I saw your business website demo. " +
-        "I'm interested in getting a website for my business " +
-        "for KSh 500. I would like to know how it works.";
-
-    openWhatsApp(message);
-}
-
-
-/* =========================================
-   OPEN WHATSAPP
-========================================= */
-
-function openWhatsApp(message) {
-
-    const encodedMessage =
-        encodeURIComponent(message);
+        `Hello, I would like to order ${product}.`;
 
     const url =
-        `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
 }
-
-
-/* =========================================
-   SHARE WEBSITE
-========================================= */
-
-async function shareWebsite() {
-
-    const shareData = {
-        title: "Mama Nakuru",
-        text: "Check out this business website.",
-        url: window.location.href
-    };
+async function shareBusiness() {
 
     if (navigator.share) {
 
-        try {
-
-            await navigator.share(shareData);
-
-        } catch (error) {
-
-            console.log("Share cancelled.");
-
-        }
+        await navigator.share({
+            title: "Mama Nakuru",
+            text: "Check out Mama Nakuru",
+            url: window.location.href
+        });
 
     } else {
 
@@ -92,8 +26,6 @@ async function shareWebsite() {
             window.location.href
         );
 
-        alert(
-            "Website link copied! You can now paste it anywhere."
-        );
+        alert("Business link copied!");
     }
 }
