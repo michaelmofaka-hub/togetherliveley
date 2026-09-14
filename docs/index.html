@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -18,10 +19,351 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
+=======
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mama Nakuru - Fresh Food & Groceries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f8f3;
+            color: #18351d;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        header {
+            background: #176b2c;
+            color: white;
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,.12);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+        nav a {
+            font-weight: 600;
+        }
+        nav a:hover {
+            opacity: .75;
+        }
+        .nav-btn {
+            background: white;
+            color: #176b2c;
+            padding: 9px 16px;
+            border-radius: 8px;
+        }
+        .hero {
+            min-height: 75vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 7%;
+            background: linear-gradient(rgba(255,255,255,.88), rgba(255,255,255,.88)), url("business.jpg") center/cover;
+        }
+        .hero-text h1 {
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1;
+            color: #176b2c;
+            margin-bottom: 20px;
+        }
+        .hero-text h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .hero-text p {
+            font-size: 18px;
+            max-width: 550px;
+            margin-bottom: 25px;
+            color: #506050;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 20px;
+            border-radius: 9px;
+            font-weight: bold;
+            transition: .2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+        .btn-call {
+            background: #176b2c;
+            color: white;
+        }
+        .hero-image img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.15);
+        }
+        .info-bar {
+            background: #fff;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 25px 7%;
+            gap: 20px;
+            text-align: center;
+        }
+        .info-box i {
+            font-size: 28px;
+            color: #176b2c;
+            margin-bottom: 8px;
+        }
+        .info-box h3 {
+            font-size: 16px;
+        }
+        .info-box p {
+            color: #667066;
+            font-size: 14px;
+        }
+        .section {
+            padding: 70px 7%;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 38px;
+            color: #176b2c;
+        }
+        .section-title p {
+            color: #687168;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,.08);
+            transition: .2s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .price {
+            color: #176b2c;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .order-btn {
+            display: block;
+            text-align: center;
+            background: #25d366;
+            color: white;
+            padding: 11px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        .order-btn:hover {
+            background: #20ba58;
+        }
+        .about {
+            background: #eaf4e8;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 15px;
+            background: #f0f0f0;
+        }
+        .about h2 {
+            color: #176b2c;
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+        .about p {
+            color: #566056;
+            margin-bottom: 15px;
+        }
+        .features {
+            list-style: none;
+        }
+        .features li {
+            margin: 10px 0;
+            font-weight: 600;
+        }
+        .features i {
+            color: #176b2c;
+            margin-right: 8px;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact h2 {
+            color: #176b2c;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        .contact p {
+            color: #606a60;
+            margin-bottom: 25px;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .developer-cta {
+            margin: 20px 7% 70px;
+            padding: 45px 30px;
+            text-align: center;
+            border-radius: 18px;
+            background: linear-gradient(135deg, #176b2c, #238d3c);
+            color: white;
+            box-shadow: 0 12px 30px rgba(23,107,44,.2);
+        }
+        .developer-cta .small-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: .8;
+            margin-bottom: 8px;
+        }
+        .developer-cta h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+        .developer-cta p {
+            max-width: 650px;
+            margin: 0 auto 22px;
+            opacity: .92;
+        }
+        .developer-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: white;
+            color: #176b2c;
+            padding: 13px 22px;
+            border-radius: 9px;
+            font-weight: bold;
+        }
+        .developer-btn:hover {
+            transform: translateY(-2px);
+        }
+        footer {
+            background: #123d1d;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+        footer h3 {
+            margin-bottom: 8px;
+        }
+        footer p {
+            color: #c6d4c8;
+            margin-bottom: 12px;
+        }
+        .footer-dev {
+            display: inline-block;
+            margin-top: 10px;
+            color: #7cff9b;
+            font-weight: bold;
+        }
+        @media (max-width: 800px) {
+            header {
+                padding: 14px 5%;
+            }
+            nav {
+                gap: 12px;
+            }
+            nav a:not(.nav-btn) {
+                display: none;
+            }
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 45px 5%;
+            }
+            .hero-text h1 {
+                font-size: 48px;
+            }
+            .hero-image {
+                order: -1;
+            }
+            .info-bar {
+                grid-template-columns: 1fr;
+            }
+            .products {
+                grid-template-columns: 1fr;
+            }
+            .about {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 55px 5%;
+            }
+            .developer-cta {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+    </style>
+>>>>>>> refs/remotes/origin/main
 </head>
 
 <body>
 
+<<<<<<< HEAD
 <!-- ================= NAVBAR ================= -->
 
 <header class="navbar">
@@ -105,9 +447,42 @@
             <div>
                 <strong>⚡</strong>
                 <span>WhatsApp Orders</span>
-            </div>
+=======
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-basket-shopping"></i>
+        Mama Nakuru
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I'd%20like%20to%20place%20an%20order." target="_blank" class="nav-btn">
+            <i class="fa-brands fa-whatsapp"></i> Order
+        </a>
+    </nav>
+</header>
 
+<!-- HERO -->
+<main id="home">
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Mama Nakuru</h1>
+            <h2>Fresh Food & Groceries</h2>
+            <p>Fresh, affordable and quality groceries for your everyday needs. Visit us or order directly through WhatsApp.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I'd%20like%20to%20make%20an%20order." target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                </a>
+                <a href="tel:+254118043649" class="btn btn-call">
+                    <i class="fa-solid fa-phone"></i> Call Us
+                </a>
+>>>>>>> refs/remotes/origin/main
+            </div>
         </div>
+<<<<<<< HEAD
 
     </div>
 
@@ -521,6 +896,127 @@
 
 
 <script src="script.js"></script>
+=======
+        <div class="hero-image">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f0f0f0' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='60' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3E🏪%3C/text%3E%3C/svg%3E" alt="Mama Nakuru grocery shop">
+        </div>
+    </section>
 
+    <!-- INFO BAR -->
+    <section class="info-bar">
+        <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Kiserian</h3>
+            <p>Kenya</p>
+        </div>
+        <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Open Today</h3>
+            <p>Come shop with us</p>
+        </div>
+        <div class="info-box">
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>Order Online</h3>
+            <p>Fast WhatsApp orders</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="section" id="products">
+        <div class="section-title">
+            <h2>Our Fresh Products</h2>
+            <p>Quality products at affordable prices.</p>
+        </div>
+        <div class="products">
+            <article class="product-card">
+                <div style="width:100%; height:230px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; font-size:80px;">🥔</div>
+                <div class="product-info">
+                    <h3>Potatoes</h3>
+                    <div class="price">KSh 100 / kg</div>
+                    <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I'd%20like%20to%20order%20potatoes." target="_blank" class="order-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Order Potatoes
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div style="width:100%; height:230px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; font-size:80px;">🍌</div>
+                <div class="product-info">
+                    <h3>Bananas</h3>
+                    <div class="price">KSh 80 / bunch</div>
+                    <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I'd%20like%20to%20order%20bananas." target="_blank" class="order-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Order Bananas
+                    </a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div style="width:100%; height:230px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; font-size:80px;">🥚</div>
+                <div class="product-info">
+                    <h3>Eggs</h3>
+                    <div class="price">KSh 450 / tray</div>
+                    <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I'd%20like%20to%20order%20eggs." target="_blank" class="order-btn">
+                        <i class="fa-brands fa-whatsapp"></i> Order Eggs
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+        <div>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect fill='%23f0f0f0' width='300' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='100' fill='%23999' text-anchor='middle' dominant-baseline='middle'%3E🏪%3C/text%3E%3C/svg%3E" alt="Mama Nakuru grocery shop">
+        </div>
+        <div>
+            <h2>Quality You Can Trust</h2>
+            <p>Mama Nakuru provides fresh food and everyday grocery essentials for the local community.</p>
+            <p>We focus on quality, affordability and friendly service.</p>
+            <ul class="features">
+                <li><i class="fa-solid fa-check"></i> Fresh produce</li>
+                <li><i class="fa-solid fa-check"></i> Affordable prices</li>
+                <li><i class="fa-solid fa-check"></i> Everyday groceries</li>
+                <li><i class="fa-solid fa-check"></i> Easy WhatsApp ordering</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+        <h2>Ready to Order?</h2>
+        <p>Contact Mama Nakuru directly.</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/254118043649?text=Hi%20Mama%20Nakuru,%20I%20want%20to%20make%20an%20order." target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> DM on WhatsApp
+            </a>
+            <a href="tel:+254118043649" class="btn btn-call">
+                <i class="fa-solid fa-phone"></i> Call 0118043649
+            </a>
+        </div>
+    </section>
+
+    <!-- WEBSITE CTA -->
+    <section class="developer-cta">
+        <div class="small-label">Want a website like this?</div>
+        <h2>I Build Websites for Businesses</h2>
+        <p>I create affordable, modern websites for shops, restaurants, businesses, services and personal brands. If you want a website like this for your business, DM me and let's build it.</p>
+        <a href="https://wa.me/254118043649?text=Hi%20Michael,%20I%20saw%20your%20website%20and%20I'd%20like%20a%20website%20for%20my%20business." target="_blank" class="developer-btn">
+            <i class="fa-brands fa-whatsapp"></i> DM Me for a Website
+        </a>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Mama Nakuru</h3>
+    <p>Fresh Food & Groceries</p>
+    <p>© 2026 Mama Nakuru. All rights reserved.</p>
+    <a href="https://wa.me/254118043649?text=Hi%20Michael,%20I'd%20like%20a%20website%20for%20my%20business." target="_blank" class="footer-dev">
+        Website by Michael — Need a website? DM me
+    </a>
+</footer>
+>>>>>>> refs/remotes/origin/main
+
+<script src="app.js"></script>
 </body>
 </html>
