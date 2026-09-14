@@ -1,0 +1,153 @@
+:root {
+    --background: #f6f7f9;
+    --card: #ffffff;
+    --text: #151922;
+    --muted: #6b7280;
+    --accent: #16a34a;
+    --radius: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    max-width: 680px;
+    margin: auto;
+}
+
+.business-header {
+    text-align: center;
+    padding: 40px 20px 25px;
+}
+
+.business-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.business-header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.category {
+    color: var(--muted);
+}
+
+.location {
+    margin-top: 12px;
+}
+
+.status {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+
+main {
+    padding: 0 16px 100px;
+}
+
+
+.whatsapp-btn {
+    display: block;
+    background: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 17px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+.secondary-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.secondary-actions a {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+
+section {
+    margin-top: 35px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 14px;
+}
+
+
+.product {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 12px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.product img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.product h3 {
+    margin: 8px 0;
+}
+
+.product p {
+    color: var(--muted);
+}
+
+.product button {
+    margin-top: 8px;
+    border: none;
+    background: none;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+
+.about {
+    background: white;
+    padding: 20px;
+    border-radius: var(--radius);
+}
+
+.about p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+
+.share-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: var(--radius);
+    border: 1px solid #ddd;
+    background: white;
+    font-weight: 700;
+}

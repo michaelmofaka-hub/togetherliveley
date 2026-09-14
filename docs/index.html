@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mama Nakuru | Fresh Groceries</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="business-header">
+
+        <img
+            src="assets/logo.png"
+            alt="Mama Nakuru logo"
+            class="business-logo"
+        >
+
+        <h1>Mama Nakuru</h1>
+
+        <p class="category">
+            Fresh Food & Groceries
+        </p>
+
+        <p class="location">
+            📍 Kiserian
+        </p>
+
+        <p class="status">
+            🟢 Open • Closes 8 PM
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <section class="actions">
+
+            <a
+                href="https://wa.me/254700000000"
+                class="whatsapp-btn"
+            >
+                💬 WhatsApp
+            </a>
+
+            <div class="secondary-actions">
+
+                <a href="tel:+254700000000">
+                    📞 Call
+                </a>
+
+                <a href="#">
+                    📍 Directions
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="products">
+
+            <h2>What We Offer</h2>
+
+            <article class="product">
+
+                <img src="assets/product1.jpg"
+                     alt="Potatoes">
+
+                <div>
+                    <h3>Potatoes</h3>
+
+                    <p>KSh 100 / kg</p>
+
+                    <button
+                        onclick="order('Potatoes')">
+                        Order →
+                    </button>
+                </div>
+
+            </article>
+
+
+            <article class="product">
+
+                <img src="assets/product2.jpg"
+                     alt="Bananas">
+
+                <div>
+                    <h3>Bananas</h3>
+
+                    <p>KSh 80 / bunch</p>
+
+                    <button
+                        onclick="order('Bananas')">
+                        Order →
+                    </button>
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="about">
+
+            <h2>About Us</h2>
+
+            <p>
+                Fresh groceries at affordable prices.
+                Visit us in Kiserian or order through WhatsApp.
+            </p>
+
+        </section>
+
+
+        <button
+            class="share-btn"
+            onclick="shareBusiness()">
+            🔗 Share My Business
+        </button>
+
+    </main>
+
+
+    <footer>
+        <p>Powered by YourBrand</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
